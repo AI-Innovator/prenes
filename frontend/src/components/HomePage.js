@@ -8,21 +8,17 @@ import {
   Redirect,
 } from "react-router-dom";
 
-export default class HomePage extends Component {
-  constructor(props) {
-    super(props);
-  }
+import Navbar from './navbar/'
+import Layout from './Layout';
+import Routes from './Routes';
 
-  render() {
+export default function HomePage() {
     return (
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <p>This is the home page</p>
-          </Route>
-
-        </Switch>
+        <Layout>
+          <Navbar />
+          <Routes />
+        </Layout>
       </Router>
     );
   }
-}
