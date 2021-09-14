@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./static/frontend"),
-    filename: "[name].js",
+    filename: "demo.js",
   },
   module: {
     rules: [
@@ -18,7 +18,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: "css-loader"
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ],
   },
