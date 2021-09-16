@@ -1,0 +1,11 @@
+.nav-links {
+display: inline-block;
+height: 20px;
+background-color:white;/*will change background-color of element */
+color: green; /*will change color of text within the element */
+}
+
+.nav-links:hover {
+background-color:green; /*will change background-color of element on hover */
+color: white; /*will change color of text within the element on hover */
+}

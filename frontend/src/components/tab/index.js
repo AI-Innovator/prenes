@@ -3,18 +3,19 @@ import Tab from 'react-bootstrap/Tab';
 import Nav from 'react-bootstrap/Nav';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import './index.css'
 
 export default () => {
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
           <Row>
             <Col sm={3}>
-              <Nav variant="pills" className="flex-column">
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Face Android SDK</Nav.Link>
+              <Nav variant="pills" className="flex-column" >
+                <Nav.Item class="nav-links" >
+                  <Nav.Link eventKey="first" className="text-success">Face Android SDK</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Camera Surveilance System</Nav.Link>
+                <Nav.Item class="nav-links">
+                  <Nav.Link eventKey="second" className="text-success">Camera Surveilance System</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>

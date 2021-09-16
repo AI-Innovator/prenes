@@ -14,7 +14,7 @@ export default () => {
                 This is a wider card with supporting text below as a natural lead-in to
                 additional content. This content is a little bit longer.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="success">Demo</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
@@ -28,7 +28,7 @@ export default () => {
                 This card has supporting text below as a natural lead-in to additional
                 content.{' '}
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="success">Demo</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>
@@ -43,7 +43,7 @@ export default () => {
                 additional content. This card has even longer content than the first to
                 show that equal height action.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="success">Demo</Button>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">Last updated 3 mins ago</small>

@@ -17,7 +17,7 @@ export default () => {
               <Form.Control as="textarea" placeholder="Tell us about your project" />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="success" type="submit">
             Send Us
           </Button>
         </Form>
