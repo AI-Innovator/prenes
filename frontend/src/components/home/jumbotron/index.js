@@ -4,7 +4,7 @@ import './index.css';
 
 export default () =>{
     return (
-        <Jumbotron fluid className="jumbo border rounded">
+        <Jumbotron fluid className="jumbo border rounded" id="about">
             <div className="row">
                 <div className="jumbotron-text text-center col-md-5 offset-md-6">
                     <div className="jumbotron-header">Demo</div>

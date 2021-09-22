@@ -12,9 +12,7 @@ import Navbar from './navbar/';
 import Layout from './Layout';
 import Routes from './Routes';
 import Footer from './footer';
-import Tab from './tab';
-import Quote from './quote';
-import Services from './services';
+
 
 export default function HomePage() {
     return (
@@ -22,9 +20,6 @@ export default function HomePage() {
         <Layout>
           <Navbar />
           <Routes />
-          <Tab />
-          <Services />
-          <Quote />
           <Footer />
         </Layout>
       </Router>

@@ -3,7 +3,7 @@ import './index.css'
 
 export default () => {
 return (
-	<div className="container">
+	<div className="container" id="contact">
 		<div className="row">
 			<div className="col-md-3 offset-md-10">
 				<a href="https://www.facebook.com/bootsnipp" className="text-success">
