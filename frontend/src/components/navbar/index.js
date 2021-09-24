@@ -23,7 +23,7 @@ const navbar = () => {
                     <Nav.Link href="#solutions">Solutions</Nav.Link>
                     <Nav.Link href="#services">Services</Nav.Link>
                     <Nav.Link href="#quote">Quote</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link href="#contact">LiveChat</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
