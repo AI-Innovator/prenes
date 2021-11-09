@@ -12,21 +12,34 @@ export default () => {
               <Row>
                 <Col sm={3}>
                   <Nav justify variant="tabs" className="flex-column" >
-                    <Nav.Item className="nav-links" >
-                      <Nav.Link eventKey="first" className="text-success">Face Android SDK</Nav.Link>
+                    <Nav.Item>
+                      <Nav.Link eventKey="first" className="text-success">Face Analytics SDK</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item className="nav-links">
-                      <Nav.Link eventKey="second" className="text-success">Camera Surveilance System</Nav.Link>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second" className="text-success">Video Analytics System</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
                 <Col sm={9}>
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
-                      aaaaaaa
+                      <h6>Support Platforms</h6>
+                        <li className="tab-text">Android, iPhone, Windows 10, Linux</li>
+                      <h6>Description</h6>
+                        <li className="tab-text">Face Detection</li>
+                        <li className="tab-text">Face Liveness Detection</li>
+                        <li className="tab-text">Face Recognition</li>
+                        <li className="tab-text">Face Expression Detection</li>
+                        <li className="tab-text">Age & Gender Estimation</li>
+                        <li className="tab-text">Eye Blink Detection</li>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      bbbbbbb
+                      <h6>Support Platforms</h6>
+                        <li className="tab-text">Server App - (Docker Version)</li>
+                        <li className="tab-text">Client App - (Windows 10 Version)</li>
+                      <h6>Description</h6>
+                        <li className="tab-text">Detect Person, Car, Bus, Bicycle, Motorcycle, Train, Truck, Boat</li>
+                        <li className="tab-text">Face Recognition based Camera surveillance system</li>
                     </Tab.Pane>
                   </Tab.Content>
                 </Col>

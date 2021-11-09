@@ -1,5 +1,5 @@
 import React from 'react';
-import Jumbotron from './jumbotron';
+import Jumbotron from '../jumbotron';
 import Carousel from '../carousel';
 import Card from '../card';
 import Tab from '../tab';
@@ -11,9 +11,8 @@ export default () => {
         <div>
             <Carousel />
             <Card />
-            <Jumbotron />
-            <Tab />
             <Services />
+            <Jumbotron />
             <Quote />
         </div>
     )

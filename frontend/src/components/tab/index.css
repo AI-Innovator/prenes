@@ -1,3 +1,7 @@
 #solutions {
     margin-top: 50px;
 }
+
+li.tab-text {
+    text-indent: 50px;
+}
