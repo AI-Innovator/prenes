@@ -6,16 +6,16 @@ return (
 	<div className="container" id="contact">
 		<div className="row">
 			<div className="col-md-3 offset-md-10">
-				<a href="https://www.facebook.com/bootsnipp" className="text-success">
-					<i id="social-fb" className="fa fa-facebook-square fa-3x social"></i>
+				<a href="https://join.slack.com/t/prenes/shared_invite/zt-ytqlrxuo-FA4Vu85CWB92_cU1QyskUg" className="text-success">
+					<i id="social-fb" className="fab fa-slack fa-3x social"></i>
 				</a>
-				<a href="https://twitter.com/bootsnipp" className="text-success">
-					<i id="social-tw" className="fa fa-twitter-square fa-3x social"></i>
+				<a href="https://discord.gg/yuq7ydwf" className="text-success">
+					<i id="social-fb" className="fab fa-discord fa-3x social"></i>
 				</a>
-				<a href="https://plus.google.com/+Bootsnipp-page" className="text-success">
-					<i id="social-gp" className="fa fa-google-plus-square fa-3x social"></i>
+				<a href="skype:live:.cid.12025921c037735c?chat" className="text-success">
+					<i id="social-tw" className="fab fa-skype fa-3x social"></i>
 				</a>
-				<a href="mailto:bootsnipp@gmail.com" className="text-success">
+				<a href="mailto:prenes.contact@gmail.com" className="text-success">
 					<i id="social-em" className="fa fa-envelope-square fa-3x social"></i>
 				</a>
 			</div>
