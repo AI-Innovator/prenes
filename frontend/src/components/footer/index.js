@@ -6,10 +6,10 @@ return (
 	<div className="container" id="contact">
 		<div className="row">
 			<div className="col-md-3 offset-md-10">
-				<a href="https://join.slack.com/t/prenes/shared_invite/zt-ytqlrxuo-FA4Vu85CWB92_cU1QyskUg" className="text-success">
+				<a href="https://prenes.slack.com/team/U02LTKCF4TW" className="text-success">
 					<i id="social-fb" className="fab fa-slack fa-3x social"></i>
 				</a>
-				<a href="https://discord.gg/yuq7ydwf" className="text-success">
+				<a href="https://discordapp.com/users/prenes#5716" className="text-success">
 					<i id="social-fb" className="fab fa-discord fa-3x social"></i>
 				</a>
 				<a href="skype:live:.cid.12025921c037735c?chat" className="text-success">

@@ -74,7 +74,7 @@ export default () => {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card8.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card5.jpg" />
               <Card.Body>
                 <Card.Title>Face Attendance System</Card.Title>
                 <Card.Text>
@@ -89,7 +89,7 @@ export default () => {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card5.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card6.jpg" />
               <Card.Body>
                 <Card.Title>Face Tracking</Card.Title>
                 <Card.Text>
@@ -120,7 +120,7 @@ export default () => {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card7.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card8.jpg" />
               <Card.Body>
                 <Card.Title>Eye Tracking App</Card.Title>
                 <Card.Text>
@@ -135,7 +135,7 @@ export default () => {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card6.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card9.jpg" />
               <Card.Body>
                 <Card.Title>Background Remover</Card.Title>
                 <Card.Text>
@@ -151,7 +151,7 @@ export default () => {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card8.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card10.jpg" />
               <Card.Body>
                 <Card.Title>Video Analytics System</Card.Title>
                 <Card.Text>
@@ -166,7 +166,7 @@ export default () => {
               </Card.Footer>
             </Card>
              <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card6.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card11.jpg" />
               <Card.Body>
                 <Card.Title>Automatic Question Answer Generation</Card.Title>
                 <Card.Text>
@@ -182,7 +182,7 @@ export default () => {
               </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="/static/assets/imgs/card5.jpg" />
+              <Card.Img variant="top" src="/static/assets/imgs/card12.jpg" />
               <Card.Body>
                 <Card.Title>GPT-3 Text Generation</Card.Title>
                 <Card.Text>
