@@ -4,6 +4,7 @@ import Home from './home/';
 import Services from './services/';
 import Contact from './contact/';
 import Faceliveness from './faceliveness';
+import Facedetection from './facedetection';
 import NotFound from './404';
 
 export default () => (
@@ -12,6 +13,7 @@ export default () => (
         <Route path="/services" component={Services} />
         <Route path="/contact" component={Contact} />
         <Route path="/faceliveness" component={Faceliveness} />
+        <Route path="/facedetection" component={Facedetection} />
         <Route component={NotFound} />
     </Switch>
 );

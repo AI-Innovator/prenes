@@ -10,10 +10,12 @@
 }
 
 .jumbotron-text {
-    padding:10px;
+    padding:60px;
     background-color: transparent;
     opacity: 0.8;
+    color: white;
 }
+
 .jumbotron-header {
     margin-top: 60px;
     padding:10px;

@@ -36,20 +36,18 @@ export default () => {
 
     const appendData = async (data) => {
         var mainContainer = document.getElementById("myData");
-        // var div = document.createElement("div");
-        // div.innerHTML = 'Confidence: ' + data.confidence;
-        mainContainer.innerHTML = 'Confidence: ' + data.confidence;
-        // for (var i = 0; i < data.length; i++) {
-        //     var div = document.createElement("div");
-        //     div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
-        //     mainContainer.appendChild(div);
-        // }
+        for (var i = 0; i < data.faces.length; i++) {
+            var div = document.createElement("div");
+            div.innerHTML = 'x1: ' + data.faces[i].box.x1 + ' y1: ' + data.faces[i].box.y1 +
+                ' x2: ' + data.faces[i].box.x2 + ' y2: ' + data.faces[i].box.y2;
+            mainContainer.appendChild(div);
+        }
     }
 
     const uploadImage = async (base64EncodedImage) => {
 
         try {
-            await fetch('https://prenes-face-analyzer.p.rapidapi.com/face/liveness/v1/score', {
+            await fetch('https://prenes-face-analyzer.p.rapidapi.com/face/detect/v1/bbox', {
                 method: 'POST',
                 body: JSON.stringify({
                     image: base64EncodedImage

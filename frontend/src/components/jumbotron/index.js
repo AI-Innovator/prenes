@@ -5,12 +5,36 @@ import './index.css';
 export default () =>{
     return (
         <Jumbotron fluid className="jumbo border rounded" id="about">
-            <div className="row">
-                <div className="jumbotron-text text-center col-md-5 offset-md-6">
-                    <div className="jumbotron-header"></div>
-                    <div className="row">
-                        <div className="col-md-8 offset-md-2">
-                        </div>
+            <div className="jumbotron-text">
+                <div className="row">
+                    <div className="col-md-8 offset-md-2">
+                        <p>I am a machine learning engineer with experience of working on a variety of ML driven projects.
+                            I work on all aspects of the development life cycle, applying my knowledge of performance boosting
+                            and latency optimization. My past work includes computer vision, natural language processing,
+                            python web backend development and building android & iOS applications.
+                        </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-4 offset-md-2">
+                        <ul>
+                          <li>Face and Palm Vein Recognition System IoT embedding Device</li>
+                          <li>Camera Surveillance System</li>
+                          <li>Object Detection and Classification</li>
+                          <li>Semantic Segmentation</li>
+                          <li>Landmark Localization</li>
+                          <li>OCR, GAN</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-4">
+                        <ul>
+                          <li>Automatic Q/A generation system</li>
+                          <li>Chatbot building and Recommendation system</li>
+                          <li>Sentiment Analysis and Entity Recognition</li>
+                          <li>Text classification and Generation</li>
+                          <li>Summarization and Keyword Extraction</li>
+                          <li>Topic Analysis and Modeling</li>
+                        </ul>
                     </div>
                 </div>
             </div>
