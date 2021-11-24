@@ -36,9 +36,9 @@ export default () => {
 
     const appendData = async (data) => {
         var mainContainer = document.getElementById("myData");
-        // var div = document.createElement("div");
-        // div.innerHTML = 'Confidence: ' + data.confidence;
-        mainContainer.innerHTML = 'Confidence: ' + data.confidence;
+        mainContainer.setAttribute("cols", "40");
+        mainContainer.setAttribute("rows", "10");
+        mainContainer.innerHTML = JSON.stringify(data, undefined, 4);
         // for (var i = 0; i < data.length; i++) {
         //     var div = document.createElement("div");
         //     div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
@@ -87,8 +87,8 @@ export default () => {
             {selectedFile && <img height="300px" alt="preview" src={preview} />}
 
 			{isFilePicked ? (
-				<div id="myData">
-				</div>
+				<textarea id="myData">
+				</textarea>
 			) : (
 				<p>Select a file to show details</p>
 			)}

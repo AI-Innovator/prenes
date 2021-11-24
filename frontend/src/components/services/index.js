@@ -10,8 +10,10 @@ export default () => {
               <Tab eventKey="ml" title="Machine Learning" tabClassName="text-success">
                   <p><b>Computer Vision</b></p>
                   <p>I apply years of my knowledge in Computer Vision when address our clients needs by implementing Machine Learning approach and analytical algorithms.</p>
-                  <p><b>Natural Language Processing</b></p>
                   <p>An identification, classification, and segmentation of an object, near-duplicate search algorithm for a large image database, anomalies detection for a surveillance system projects of exceptional quality were created for our clients.</p>
+                  <p><b>Natural Language Processing</b></p>
+                  <p>I can develop several types of natural language projects in NLP, NLU and NLG. I'd like to work at all aspects such as web scraping, text analysis and generation.
+                  </p>
               </Tab>
               <Tab eventKey="cloud" title="Cloud" tabClassName="text-success">
                   <p><b>Cloud based solutions</b></p>

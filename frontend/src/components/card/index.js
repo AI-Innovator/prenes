@@ -24,7 +24,7 @@ export default () => {
                 </Link>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -40,7 +40,7 @@ export default () => {
                 </Link>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -51,10 +51,12 @@ export default () => {
                   Recognise the faces between two images.
                   It can be used for face recognition processes such as face feature embedding, recognition module.
                 </Card.Text>
-                <Button variant="warning" disabled>Coming Soon</Button>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -65,10 +67,12 @@ export default () => {
                   This uses real-time face recognition system. It will include user management system, real-time
                   face recognition, statistical analysis in customers.
                 </Card.Text>
-                <Button variant="warning" disabled>Coming Soon</Button>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -79,10 +83,12 @@ export default () => {
                   It consists of client and server side applications. For client side application, it's based
                   on mobile & tablet. For server side application, it has admin panel for employee management system.
                 </Card.Text>
-                <Button variant="warning" disabled>Coming Soon</Button>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -93,12 +99,12 @@ export default () => {
                   This is real-time face tracking system. It's extremely reliable, seamless to integrate into mobile
                   version SDK and simple to use.
                 </Card.Text>
-                <Link to="/contact">
-                  <Button variant="warning" disabled>Coming Soon</Button>
-                </Link>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -109,10 +115,12 @@ export default () => {
                   This system consists of Age & Gender detection, facial landmark extraction, expression recognition and
                   deep fake detection.
                 </Card.Text>
-                <Button variant="warning" disabled>Coming Soon</Button>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -122,10 +130,12 @@ export default () => {
                 <Card.Text>
                   This is mobile app to make car drivers notify their eye blink state.
                 </Card.Text>
-                <Button variant="warning" disabled>Coming Soon</Button>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -135,12 +145,12 @@ export default () => {
                 <Card.Text>
                   This tool automatically removes the background from any image. It uses computer vision techniques. {' '}
                 </Card.Text>
-                <Link to="/faceliveness">
-                  <Button variant="warning" disabled>Coming Soon</Button>
-                </Link>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -150,10 +160,12 @@ export default () => {
                 <Card.Text>
                   It can detect many kind of objects from the video and get the statistical analysis in the region of interest.
                 </Card.Text>
-                <Button variant="warning" disabled>Coming Soon</Button>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
              <Card>
@@ -163,12 +175,12 @@ export default () => {
                 <Card.Text>
                   This tool automatically generates pairs of question and answer from raw text. {' '}
                 </Card.Text>
-                <Link to="/faceliveness">
-                  <Button variant="warning" disabled>Coming Soon</Button>
-                </Link>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -179,12 +191,12 @@ export default () => {
                   GPT-3 can create anything that has a language structure — which means it can answer questions,
                   write essays, summarize long texts, translate languages, take memos, and even create computer code.
                 </Card.Text>
-                <Link to="/contact">
-                  <Button variant="warning" disabled>Coming Soon</Button>
-                </Link>
+                <a href="#contact">
+                  <Button variant="dark">Contact Me</Button>
+                </a>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated 30 days ago</small>
               </Card.Footer>
             </Card>
           </Row>

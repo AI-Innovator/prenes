@@ -36,12 +36,15 @@ export default () => {
 
     const appendData = async (data) => {
         var mainContainer = document.getElementById("myData");
-        for (var i = 0; i < data.faces.length; i++) {
-            var div = document.createElement("div");
-            div.innerHTML = 'x1: ' + data.faces[i].box.x1 + ' y1: ' + data.faces[i].box.y1 +
-                ' x2: ' + data.faces[i].box.x2 + ' y2: ' + data.faces[i].box.y2;
-            mainContainer.appendChild(div);
-        }
+        mainContainer.setAttribute("cols", "40");
+        mainContainer.setAttribute("rows", "10");
+        mainContainer.innerHTML = JSON.stringify(data, undefined, 4);
+        // for (var i = 0; i < data.faces.length; i++) {
+        //     var div = document.createElement("div");
+        //     div.innerHTML = 'x1: ' + data.faces[i].box.x1 + ' y1: ' + data.faces[i].box.y1 +
+        //         ' x2: ' + data.faces[i].box.x2 + ' y2: ' + data.faces[i].box.y2;
+        //     mainContainer.appendChild(div);
+        // }
     }
 
     const uploadImage = async (base64EncodedImage) => {
@@ -85,8 +88,7 @@ export default () => {
             {selectedFile && <img height="300px" alt="preview" src={preview} />}
 
 			{isFilePicked ? (
-				<div id="myData">
-				</div>
+				<textarea id="myData"></textarea>
 			) : (
 				<p>Select a file to show details</p>
 			)}
