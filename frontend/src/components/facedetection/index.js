@@ -1,22 +1,45 @@
 import React, { useState, useRef, useEffect } from "react";
-import Button from "react-bootstrap/Button"
-import Form from "react-bootstrap/Form"
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Progressbar from "../progressbar/progressbar";
+import Fd_jumbo from './fd_jumbo';
+import './index.css'
 
 export default () => {
     const [selectedFile, setSelectedFile] = useState();
     const [isFilePicked, setIsFilePicked] = useState(false);
+    const [isShow, setIsShow] = useState(false);
     const [preview, setPreview] = useState();
 
     const changeHandler = (event) => {
-        const image = event.target.files[0]
+        const image = event.target.files[0];
         setSelectedFile(event.target.files[0]);
         setIsFilePicked(true);
+        setIsShow(true);
 
         const reader = new FileReader()
         reader.readAsDataURL(image)
         reader.onloadend = () => {
             uploadImage(reader.result)
         }
+    }
+
+    const clickHandler = (event) => {
+        fetch(event.target.value)
+        .then((res) => res.blob())
+        .then((myBlob) => {
+            setSelectedFile(myBlob)
+            setIsFilePicked(true);
+            setIsShow(true);
+
+            const reader = new FileReader()
+            reader.readAsDataURL(myBlob)
+            reader.onloadend = () => {
+                uploadImage(reader.result)
+            }
+
+            // logs: Blob { size: 1024, type: "image/jpeg" }
+        });
     }
 
     useEffect(() => {
@@ -36,9 +59,10 @@ export default () => {
 
     const appendData = async (data) => {
         var mainContainer = document.getElementById("myData");
-        mainContainer.setAttribute("cols", "40");
-        mainContainer.setAttribute("rows", "10");
+        // mainContainer.setAttribute("cols", "40");
+        // mainContainer.setAttribute("rows", "10");
         mainContainer.innerHTML = JSON.stringify(data, undefined, 4);
+        $("#myPicture").attr("src", preview);
         // for (var i = 0; i < data.faces.length; i++) {
         //     var div = document.createElement("div");
         //     div.innerHTML = 'x1: ' + data.faces[i].box.x1 + ' y1: ' + data.faces[i].box.y1 +
@@ -64,7 +88,7 @@ export default () => {
             })
             .then(response => response.json())
                 .then(data => {
-                    console.log("11111111: ", data)
+                    setIsShow(false);
                     appendData(data);
                 })
             .catch(err => {
@@ -80,19 +104,46 @@ export default () => {
         formData.append("image", selectedFile);
     }
 
+    var url ="https://stackblitz.com/files/react-spinner-sample/github/RahmanM/react-spinner-sample/master/loading.gif";
+
     return (
     <div className="m-3">
-        <label className="mx-3">
-            <input type="file" className="d-none" name="file" onChange={changeHandler}/>
-            <i className="fa fa-upload fa-3x"></i>
-            {selectedFile && <img height="300px" alt="preview" src={preview} />}
+        <Fd_jumbo />
+        <div className={"row header-part"}>
+            <div className={"offset-md-2 col-md-8 text-center mb-5"}>
+                <h2 className={"header2 text-center"}>Face Detection</h2>
+                <p className={"header2"}>Try this solution out right now. Select one of the pictures below or upload your own image.</p>
+            </div>
+        </div>
+        <div className={"row"}>
+            <div className={"offset-md-1 col-md-5"}>
+                <img src={isFilePicked ? preview : "/static/assets/imgs/empty.png"} alt={"preview"} height={"300px"}/>
+            </div>
+            <div className={"col-md-1"}>
+                <Progressbar show={isShow} imageUrl={url} height="90" width="90" alignment="middle" alttext="Loading..." />
+            </div>
+            <div className={"col-md-5"}>
+                <textarea id={"myData"} cols="40" rows="12"></textarea>
+            </div>
+        </div>
+        <div className={"row"}>
+            <div className={"offset-md-1 col-md-5"}>
+                <label className="mx-1">
+                    <input type="button" className="d-none" value={"/static/assets/imgs/fd_sample1.jpg"} name="file" onClick={clickHandler}/>
+                    <img src={"/static/assets/imgs/fd_sample1.jpg"} alt={"preview"} height={"100px"}/>
+                </label>
 
-			{isFilePicked ? (
-				<textarea id="myData"></textarea>
-			) : (
-				<p>Select a file to show details</p>
-			)}
-        </label>
+                <label className="mx-1">
+                    <input type="button" className="d-none" value={"/static/assets/imgs/fd_sample2.jpg"} name="file" onClick={clickHandler}/>
+                    <img src={"/static/assets/imgs/fd_sample2.jpg"} alt={"preview"} height={"100px"}/>
+                </label>
+
+                <label className="mx-1">
+                    <input type="file" className="d-none" name="file" onChange={changeHandler}/>
+                    <img src={"/static/assets/imgs/upload.png"} alt={"preview"} height={"100px"}/>
+                </label>
+            </div>
+        </div>
     </div>
     )
 }

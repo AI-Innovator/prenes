@@ -90,7 +90,7 @@ export default () => {
 				<textarea id="myData">
 				</textarea>
 			) : (
-				<p>Select a file to show details</p>
+				<p>Upload an image for anti-spoof detection</p>
 			)}
         </label>
     </div>
