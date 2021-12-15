@@ -4,8 +4,8 @@ import './index.css';
 
 export default () =>{
     return (
-        <Jumbotron fluid className="jumbo border rounded" id="about">
-            <div className="jumbotron-text">
+        <Jumbotron fluid className="profile-jumbo border rounded" id="profile-about">
+            <div className="profile-jumbotron-text">
                 <div className="row">
                     <div className="col-md-8 offset-md-2">
                         <p>I am a machine learning engineer with experience of working on a variety of ML driven projects.

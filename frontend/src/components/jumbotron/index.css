@@ -1,15 +1,15 @@
-#about {
+#profile-about {
     margin-top: 50px;
 }
 
-.jumbo {
+.profile-jumbo {
     background: url("/static/assets/imgs/profile.jpg") no-repeat;
     background-size: 100% 100%;
     height: 400px;
     z-index: -2;
 }
 
-.jumbotron-text {
+.profile-jumbotron-text {
     padding:60px;
     background-color: transparent;
     opacity: 0.8;
