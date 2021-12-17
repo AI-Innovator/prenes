@@ -1,18 +1,18 @@
-.fd-jumbo {
-    background: url("/static/assets/imgs/fd_jumbo.jpg") no-repeat;
+.fl-jumbo {
+    background: url("/static/assets/imgs/fl_jumbo.jpg") no-repeat;
     background-size: 100% 100%;
     height: 400px;
     z-index: -2;
 }
 
-.fd-jumbotron-text {
+.fl-jumbotron-text {
     padding:60px;
     background-color: transparent;
     opacity: 0.8;
     color: white;
 }
 
-.fd-jumbotron-header {
+.fl-jumbotron-header {
     margin-top: 60px;
     padding:10px;
     font-size: 2.25rem;
