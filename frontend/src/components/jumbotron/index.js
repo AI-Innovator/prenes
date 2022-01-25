@@ -8,10 +8,9 @@ export default () =>{
             <div className="profile-jumbotron-text">
                 <div className="row">
                     <div className="col-md-8 offset-md-2">
-                        <p>I am a machine learning engineer with experience of working on a variety of ML driven projects.
-                            I work on all aspects of the development life cycle, applying my knowledge of performance boosting
-                            and latency optimization. My past work includes computer vision, natural language processing,
-                            python web backend development and building android & iOS applications.
+                        <p>I am a full stack engineer with experience of working on a variety of ML driven projects. I work on all aspects of
+                            the development life cycle, applying my knowledge of performance boosting and latency optimization. This is
+                            self-built website from scratch.
                         </p>
                     </div>
                 </div>

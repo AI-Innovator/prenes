@@ -6,7 +6,11 @@ import "./index.css"
 export default () => {
     return (
         <div id="services">
-            <Tabs defaultActiveKey="ml" id="uncontrolled-tab-example" className="mb-3">
+            <Tabs defaultActiveKey="webdev" id="uncontrolled-tab-example" className="mb-3">
+              <Tab eventKey="webdev" title="Web Development" tabClassName="text-success">
+                  <p><b>Single Page Web Application</b></p>
+                  <p>I'd like to use python(Django/Flask), C/C++ for the backend-side, and for the frontend-side React, Bootstrap and Javascript is preferred </p>
+              </Tab>
               <Tab eventKey="ml" title="Machine Learning" tabClassName="text-success">
                   <p><b>Computer Vision</b></p>
                   <p>I apply years of my knowledge in Computer Vision when address our clients needs by implementing Machine Learning approach and analytical algorithms.</p>
@@ -18,11 +22,6 @@ export default () => {
               <Tab eventKey="cloud" title="Cloud" tabClassName="text-success">
                   <p><b>Cloud based solutions</b></p>
                   <p>Machine learning model needs infrastructure to be runned on cloud services such as GCP, AWS, genesisCloud etc.</p>
-              </Tab>
-              <Tab eventKey="backend" title="Back-end" tabClassName="text-success">
-                  <p><b>Backend development for web application</b></p>
-                  <p>I'd like to use backend-side programming languages such as python(Django/Flask), C/C++.</p>
-
               </Tab>
               <Tab eventKey="mobile" title="Mobile" tabClassName="text-success">
                   <p><b>Mobile App development</b></p>

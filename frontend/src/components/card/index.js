@@ -51,9 +51,9 @@ export default () => {
                   Recognise the faces between two images.
                   It can be used for face recognition processes such as face feature embedding, recognition module.
                 </Card.Text>
-                <a href="#contact">
-                  <Button variant="dark">Contact Me</Button>
-                </a>
+                <Link to="/facerecognition">
+                  <Button variant="success">Demo</Button>
+                </Link>
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">Last updated 30 days ago</small>
