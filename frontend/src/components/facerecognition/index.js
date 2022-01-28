@@ -117,13 +117,13 @@ export default () => {
         </div>
         <div className={"row"}>
             <div className={"col-md-3"}>
-                <img src={isFilePicked ? preview : "/static/assets/imgs/empty.png"} alt={"preview"} height={"300px"}/>
+                <img src={isFilePicked ? preview : "/static/assets/imgs/empty.png"} className={"rounded"} alt={"preview"} height={"300px"}/>
             </div>
             <div className={"col-md-1"}>
                 <Progressbar show={isShow} imageUrl={url} height="90" width="90" alignment="middle" alttext="Loading..." />
             </div>
             <div className={"col-md-3"}>
-                <img src={isFilePicked ? preview : "/static/assets/imgs/empty.png"} alt={"preview"} height={"300px"}/>
+                <img src={isFilePicked ? preview : "/static/assets/imgs/empty.png"} className={"rounded"} alt={"preview"} height={"300px"}/>
             </div>
             <div className={"col-md-1"}>
                 <Progressbar show={isShow} imageUrl={url} height="90" width="90" alignment="middle" alttext="Loading..." />
@@ -136,29 +136,29 @@ export default () => {
             <div className={"col-md-4"}>
                 <label className="mx-1">
                     <input type="button" className="d-none" value={"/static/assets/imgs/fd_sample1.jpg"} name="file" onClick={clickHandler}/>
-                    <img src={"/static/assets/imgs/fd_sample1.jpg"} alt={"preview"} height={"90px"}/>
+                    <img src={"/static/assets/imgs/fd_sample1.jpg"} className={"rounded"} alt={"preview"} height={"90px"}/>
                 </label>
                 <label className="mx-1">
                     <input type="button" className="d-none" value={"/static/assets/imgs/fd_sample2.jpg"} name="file" onClick={clickHandler}/>
-                    <img src={"/static/assets/imgs/fd_sample2.jpg"} alt={"preview"} height={"90px"}/>
+                    <img src={"/static/assets/imgs/fd_sample2.jpg"} className={"rounded"} alt={"preview"} height={"90px"}/>
                 </label>
                 <label className="mx-1">
                     <input type="file" className="d-none" name="file" onChange={changeHandler}/>
-                    <img src={"/static/assets/imgs/upload.png"} alt={"preview"} height={"90px"}/>
+                    <img src={"/static/assets/imgs/upload.png"} className={"rounded"} alt={"preview"} height={"90px"}/>
                 </label>
             </div>
             <div className={"col-md-4"}>
                 <label className="mx-1">
                     <input type="button" className="d-none" value={"/static/assets/imgs/fd_sample1.jpg"} name="file" onClick={clickHandler}/>
-                    <img src={"/static/assets/imgs/fd_sample1.jpg"} alt={"preview"} height={"90px"}/>
+                    <img src={"/static/assets/imgs/fd_sample1.jpg"} className={"rounded"} alt={"preview"} height={"90px"}/>
                 </label>
                 <label className="mx-1">
                     <input type="button" className="d-none" value={"/static/assets/imgs/fd_sample2.jpg"} name="file" onClick={clickHandler}/>
-                    <img src={"/static/assets/imgs/fd_sample2.jpg"} alt={"preview"} height={"90px"}/>
+                    <img src={"/static/assets/imgs/fd_sample2.jpg"} className={"rounded"} alt={"preview"} height={"90px"}/>
                 </label>
                 <label className="mx-1">
                     <input type="file" className="d-none" name="file" onChange={changeHandler}/>
-                    <img src={"/static/assets/imgs/upload.png"} alt={"preview"} height={"90px"}/>
+                    <img src={"/static/assets/imgs/upload.png"} className={"rounded"} alt={"preview"} height={"90px"}/>
                 </label>
             </div>
             <div className={"col-md-4"}>
