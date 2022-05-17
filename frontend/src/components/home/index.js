@@ -8,14 +8,14 @@ import Services from '../services';
 import Product from '../product';
 
 export default () => {
-    return (
-        <div>
-            <Carousel />
-            {/*<Card />*/}
-            {/*<Services />*/}
-            {/*<Jumbotron />*/}
-            <Product/>
-            <Quote />
-        </div>
-    )
+  return (
+      <div>
+        <Carousel/>
+        <Card />
+        {/*<Services />*/}
+        {/*<Jumbotron />*/}
+        <Product/>
+        <Quote/>
+      </div>
+  )
 }
